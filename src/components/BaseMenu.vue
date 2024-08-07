@@ -26,13 +26,5 @@ const list = ref([
 </script>
 
 <template>
-    <div v-for="item in list" :key="item.id">
-        <a>{{ item.name }}</a>
-    </div>
+    <a v-for="item in list" :key="item.id">{{ item.name }}</a>
 </template>
-
-<style scoped>
-a {
-    text-decoration: none;
-}
-</style>
