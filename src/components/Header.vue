@@ -1,6 +1,6 @@
 <template>
     <header>
-        <img src="../assets/logo.svg" alt="logo"/>
+        <img class="logo" src="../assets/logo.svg" alt="logo"/>
         <img src="../assets/icon-hamburger.svg" alt="menu"/>
     </header>
 </template>
@@ -10,5 +10,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .logo {
+        width: 10rem;
     }
 </style>
