@@ -12,7 +12,7 @@ import BaseSocial from './BaseSocial.vue';
         <div class="social">
             <BaseSocial/>
         </div>
-        <p>© 2021 Loopstudios. All rights reserved.</p>
+        <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
     </footer>
 </template>
 
@@ -35,9 +35,13 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding: 1.5rem 0;
 }
 .social {
     display: flex;
     gap: 1rem;
+}
+.copyright {
+    color: var(--dark-gray);
 }
 </style>
