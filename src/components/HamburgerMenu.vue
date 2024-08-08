@@ -3,7 +3,7 @@ import { store } from '../store';
 import BaseMenu from './BaseMenu.vue';
 </script>
 <template>
-    <div class="hamburger-menu">
+    <div class="hamburger-menu" :class="{ display: store.displayMenu }">
         <div class="header">
             <img class="logo" src="../assets/logo.svg" alt="logo"/>
             <button @click="store.toggleMenu">
@@ -25,10 +25,12 @@ button {
     position: absolute;
     z-index: 1;
     background-color: var(--black);
+    right: -100%;
     width: 100vw;
     height: 100vh;
     color: var(--white);
     padding: 2.5rem 1.5rem;
+    transition: right 0.3s ease;
 }
 .header {
     display: flex;
@@ -48,5 +50,8 @@ button {
     font-size: 1.5rem;
     font-weight: 300;
     text-transform: uppercase;
+}
+.display {
+    right: 0;
 }
 </style>
