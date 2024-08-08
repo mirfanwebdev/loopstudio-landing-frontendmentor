@@ -9,7 +9,7 @@ import { store } from './store';
 
 <template>
   <main>
-    <HamburgerMenu v-if="store.displayMenu"/>
+    <HamburgerMenu/>
     <Hero />
     <div class="main-section">
       <Interactive />
