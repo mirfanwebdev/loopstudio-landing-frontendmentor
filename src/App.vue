@@ -4,7 +4,6 @@ import HamburgerMenu from './components/HamburgerMenu.vue';
 import Hero from './components/Hero.vue';
 import Interactive from './components/Interactive.vue';
 import Products from './components/Products.vue';
-import { store } from './store';
 </script>
 
 <template>
