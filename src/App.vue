@@ -26,4 +26,10 @@ import Products from './components/Products.vue';
   align-items: center;
   gap: 5rem
 }
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    padding: 12rem;
+  }
+}
 </style>

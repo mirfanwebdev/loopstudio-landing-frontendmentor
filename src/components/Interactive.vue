@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-<section>
+<section class="container-interactive">
     <img src="../assets/mobile/image-interactive.jpg" alt="interactive">
     <div class="container-text">
       <h2>The leader in interactive VR</h2>
@@ -30,5 +30,31 @@ h2 {
 p {
   line-height: 1.6;
   color: var(--dark-gray);
+}
+
+@media screen and (min-width: 768px) {
+  section.container-interactive {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+  }
+  img {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  .container-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background-color: var(--white);
+    padding: 5rem 0 5rem 5rem;
+    text-align: left;
+  }
 }
 </style>

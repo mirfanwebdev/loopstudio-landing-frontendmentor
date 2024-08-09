@@ -48,7 +48,7 @@ h1 {
 }
 .bg {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: black;
     opacity: 0.4;

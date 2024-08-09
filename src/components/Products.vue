@@ -1,14 +1,18 @@
 <script setup>
+import BaseButton from './BaseButton.vue';
 import BaseItem from './BaseItem.vue';
 </script>
 
 <template>
 <section>
-    <h2>our creations</h2>
+    <div class="container-title">
+        <h2>our creations</h2>
+        <BaseButton class="desktop"/>
+    </div>
     <div class="container-product">
         <BaseItem/>
     </div>
-    <button class="btn">see all</button>
+    <BaseButton class="mobile" />
 </section>
 </template>
 
@@ -27,23 +31,41 @@ h2 {
     font-size: 2.25rem;
     margin: 1.5rem 0;
 }
+.container-title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .container-product {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
 }
-.btn {
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    background-color: transparent;
-    border: 2px solid var(--very-dark-gray);
-    padding: 0.5rem 1.5rem;
-    color: var(--very-dark-gray);
-    cursor: pointer;
+.desktop {
+    display: none;
 }
-.btn:active {
-    background-color: var(--very-dark-gray);
-    color: var(--white);
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 3.25rem;
+    }
+    .container-title {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-product {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+        padding: 0.5rem 2.5rem;
+        font-weight: 700;
+    }
 }
 </style>
