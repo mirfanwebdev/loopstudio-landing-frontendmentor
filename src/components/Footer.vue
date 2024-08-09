@@ -21,7 +21,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
     gap: 1.25rem;
     padding: 2.5rem;
     background-color: var(--black);

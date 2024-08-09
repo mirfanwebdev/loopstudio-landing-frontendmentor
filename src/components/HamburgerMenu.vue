@@ -22,7 +22,7 @@ button {
     border: none;
 }
 .hamburger-menu {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     background-color: var(--black);
     right: -100%;
@@ -53,5 +53,11 @@ button {
 }
 .display {
     right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
 }
 </style>
