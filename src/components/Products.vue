@@ -47,8 +47,11 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+    section {
+        gap: 3rem;
+    }
     h2 {
-        font-size: 3.25rem;
+        font-size: 3.5rem;
     }
     .container-title {
         justify-content: space-between;

@@ -61,7 +61,7 @@ const list = ref([
     },
     {
         id: 8,
-        name: 'fisheye',
+        name: 'make it fisheye',
         img: fisheye,
         imgDesktop: fisheyeDesktop,
     },
@@ -109,6 +109,12 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+    p {
+        font-size: 2rem;
+        width: 11rem;
+        bottom: 2.5rem;
+        left: 2.5rem;
+    }
     .container-item {
         width: 23%;
     }
