@@ -70,14 +70,14 @@ const list = ref([
 </script>
 
 <template>
-<div v-for="item in list" :key="item.id" class="container-item">
-    <picture>
-        <source media="(min-width: 768px)" :srcset="item.imgDesktop">
-        <img :src="item.img" :alt="item.name">
-    </picture>
-    <div class="bg"></div>
-    <p>{{ item.name }}</p>
-</div>
+    <div v-for="item in list" :key="item.id" class="container-item">
+        <picture>
+            <source media="(min-width: 768px)" :srcset="item.imgDesktop">
+            <img :src="item.img" :alt="item.name">
+        </picture>
+        <div class="bg"></div>
+        <p>{{ item.name }}</p>
+    </div>
 </template>
 
 <style scoped>
@@ -88,6 +88,10 @@ img {
 }
 .container-item {
     position: relative;
+}
+.container-item:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }
 .bg {
     position: absolute;

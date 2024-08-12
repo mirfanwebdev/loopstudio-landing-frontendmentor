@@ -14,8 +14,8 @@
     width: fit-content;
     height: fit-content;
 }
-.btn:active {
-    background-color: var(--very-dark-gray);
+.btn:hover, .btn:active {
+    background-color: var(--black);
     color: var(--white);
 }
 </style>
