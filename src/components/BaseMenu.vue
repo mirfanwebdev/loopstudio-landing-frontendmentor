@@ -28,3 +28,14 @@ const list = ref([
 <template>
     <a v-for="item in list" :key="item.id">{{ item.name }}</a>
 </template>
+
+<style scoped>
+a {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+a:hover {
+    cursor: pointer;
+    border-bottom-color: var(--white);
+}
+</style>

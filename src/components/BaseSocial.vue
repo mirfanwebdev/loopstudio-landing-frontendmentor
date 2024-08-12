@@ -31,5 +31,19 @@ const socials = ref([
 </script>
 
 <template>
-    <a v-for="social in socials" :key="social.id"><img :src="social.img" :alt="social.name"/></a>
+    <a v-for="social in socials" :key="social.id">
+        <img :src="social.img" :alt="social.name"/>
+    </a>
 </template>
+
+<style scoped>
+a {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.25rem;
+}
+    a:hover {
+        cursor: pointer;
+        border-bottom-color: white;
+        padding-bottom: 0.25rem;
+    }
+</style>
